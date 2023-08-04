@@ -1,0 +1,40 @@
+{
+  "name": "cubejs-object-transformer",
+  "version": "1.0.0",
+  "description": "Transformer function that transforms a Cube.js object to a nested JavaScript object.",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "scripts": {
+    "build": "npx tsc",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/furkandoganktf/cubejs-object-transformer.git"
+  },
+  "keywords": [
+    "cubejs",
+    "object",
+    "transformer",
+    "javascript",
+    "typescript"
+  ],
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "package.json"
+  ],
+  "author": "Furkan Dogan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/furkandoganktf/cubejs-object-transformer/issues"
+  },
+  "homepage": "https://github.com/furkandoganktf/cubejs-object-transformer#readme",
+  "devDependencies": {
+    "@types/jest": "^29.5.3",
+    "jest": "^29.6.2",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.1.6"
+  }
+}
