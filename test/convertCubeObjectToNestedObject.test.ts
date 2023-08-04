@@ -25,7 +25,10 @@ describe("convertCubeObjectToNestedObject", () => {
       },
     };
 
-    const convertedObject = convertCubeObjectToNestedObject(originalObject);
+    const convertedObject = convertCubeObjectToNestedObject(
+      originalObject,
+      "Issue"
+    );
     expect(convertedObject).toEqual(expectedObject);
   });
 
@@ -46,10 +49,7 @@ describe("convertCubeObjectToNestedObject", () => {
       },
     };
 
-    const convertedObject = convertCubeObjectToNestedObject(
-      originalObject,
-      "Issue"
-    );
+    const convertedObject = convertCubeObjectToNestedObject(originalObject);
     expect(convertedObject).toEqual(expectedObject);
   });
 });
@@ -98,7 +98,10 @@ describe("convertCubeArrayToNestedObjectArray", () => {
       },
     ];
 
-    const convertedArray = convertCubeArrayToNestedObjectArray(originalArray);
+    const convertedArray = convertCubeArrayToNestedObjectArray(
+      originalArray,
+      "Issue"
+    );
     expect(convertedArray).toEqual(expectedArray);
   });
 
@@ -137,10 +140,7 @@ describe("convertCubeArrayToNestedObjectArray", () => {
       },
     ];
 
-    const convertedArray = convertCubeArrayToNestedObjectArray(
-      originalArray,
-      "Issue"
-    );
+    const convertedArray = convertCubeArrayToNestedObjectArray(originalArray);
     expect(convertedArray).toEqual(expectedArray);
   });
 });
